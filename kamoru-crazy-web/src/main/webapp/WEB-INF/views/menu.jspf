@@ -1,0 +1,56 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c"        uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
+<security:authorize url="/video**">
+<section>
+	<h4>Video</h4>
+	<ul>
+		<li><a href="<c:url value="/video"/>">Video Main</a>
+		<li><a href="<c:url value="/video/search"/>">Video search</a>
+		<li><a href="<c:url value="/video/list"/>">Video list</a>
+		<li><a href="<c:url value="/video/actress"/>">Actress list</a>
+		<li><a href="<c:url value="/video/studio"/>">Studio List</a>
+		<li><a href="<c:url value="/video/briefing"/>">Video briefing</a>
+		<li><a href="<c:url value="/video/torrent"/>">Video Torrent</a>
+		<li><a href="<c:url value="/video/parseToTitle"/>">parse to title</a>
+	</ul>
+</section>
+</security:authorize>
+
+<security:authorize url="/image**">
+<section>
+	<h4>Image</h4>
+	<ul>
+		<li><a href="<c:url value="/image"/>">Image view</a>
+		<li><a href="<c:url value="/image/downloadGnomImage"/>">Gnom Image Download</a>
+		<li><a href="<c:url value="/image/google"/>">Google Image search</a>
+		<li><a href="<c:url value="/image/slides"/>">Slide Image view</a>
+		<li><a href="<c:url value="/image/canvas"/>">Canvas Image view</a>
+	</ul>
+</section>
+</security:authorize>
+
+<security:authorize url="/manager**">
+<section>
+	<h4>Manager</h4>
+	<ul>
+		<li><a href="<c:url value="/manager/requestMappingList"/>">request mapping list</a>
+		<li><a href="<c:url value="/manager/hitMessageCodeList"/>">hit messageCode List</a>
+		<li><a href="<c:url value="/jsp/util/webAttribute.jsp"/>">Web Attribute</a>
+		<li><a href="<c:url value="/jsp/util/threaddump.jsp"/>">Thread dump</a>
+		<li><a href="<c:url value="/jsp/util/logView.jsp"/>">Log view</a>
+		<li><a href="<c:url value="/manager/jkServlet"/>">JK.Servlet</a>
+		<li><a href="<c:url value="/manager/error"/>">Error</a>
+	</ul>
+</section>
+</security:authorize>
+
+<section>
+	<h4>Utilities</h4>
+	<ul>
+		<li><a href="<c:url value="/jsp/util/colors.jsp"/>">Standard Colors</a>
+		<li><a href="<c:url value="/jsp/util/portScan.jsp"/>">Port scan</a>
+	</ul>
+</section>
+
+

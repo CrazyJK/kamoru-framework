@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function showNotification() {
+		if (!!window.webkitNotifications) { //브라우저 지원현황 확인하기
+			if (window.webkitNotifications.checkPermission() == 0) { //사용자 승인 여부 확인하기  
+				var picture = 'http://mkexdev.net/img/mkex.jpg';
+				var titleStr = 'MKEX의 HTML5';
+				var bodyStr = 'HTML5 Notification 데모입니다';
+				var noti1 = window.webkitNotifications.createNotification(
+						picture, titleStr, bodyStr);
+				var noti2 = window.webkitNotifications
+						.createHTMLNotification("http://m.mkexdev.net");
+				noti1.ondisplay = function() { setTimeout(noti1.cancel(), 15000); }
+				noti1.show();
+				noti2.show();
+			} else {
+				requestPermission(showNotification);
+			}
+		} else {
+			alert("현재 브라우저는Notifications를 지원하지 않습니다");
+		}
+	}
+	function requestPermission(callback) {
+		window.webkitNotifications.requestPermission(callback);
+	}
+</script>
+</head>
+<body>
+	<button onclick="showNotification();">알림실행</button>
+</body>
+</html>

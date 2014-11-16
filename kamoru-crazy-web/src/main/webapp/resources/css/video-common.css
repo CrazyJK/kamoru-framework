@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+em {
+	background-color: rgba(0,127,0,.5);
+	font-style: normal;
+	font-size: 12px;
+}
+.highlighted {
+	background-color:yellow;
+}
+
+/* for history.jsp */
+.history-item,
+.search-item {
+	font-size:12px;
+	font-family:'나눔고딕코딩';
+	border-bottom: 1px solid orange;
+	border-right: 1px solid orange;
+	border-radius:5px; 
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+	padding:0px 5px 1px 5px;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+h4.item-header {
+	margin: 0;
+}
+ol.items {
+	font-size:12px;
+	font-family:'나눔고딕코딩';
+	
+}
+ol.items li {
+	padding-bottom: 2px;
+}
+
+.mark {
+	background-color: green;
+	/* background: url('<c:url value="/res/img/yes_check.png"/>');
+	background-size: 30px 25px;
+	background-repeat: no-repeat; */
+}
+.text {
+	font-size: 11px; 
+	border: 0; 
+	background-color: lightgray;
+}
+.text:focus {
+	background-color:yellow;
+}

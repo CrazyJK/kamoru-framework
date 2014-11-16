@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+/* Webkit용 scrollbar ref. http://circlash.tistory.com/610 */
+::-webkit-scrollbar {
+	width: 8px; 
+	height: 8px; 
+	border: 0px solid #fff; 
+	background-color: rgba(255,255,255,0);
+}
+::-webkit-scrollbar-button:start:decrement, 
+::-webkit-scrollbar-button:end:increment {
+	display: block; 
+	height: 10px; 
+	/* background: url('./images/bg.png') #efefef; */
+	background-color: rgba(255,255,255,0);
+}
+::-webkit-scrollbar-track {
+	background-color: rgba(255,255,255,0);
+	/* background: #efefef; */ 
+	-webkit-border-radius: 10px; 
+	border-radius:10px; 
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0);
+}
+::-webkit-scrollbar-thumb {
+	height: 50px; 
+	width: 50px; 
+	background:rgba(85, 136, 136, .75); 
+	-webkit-border-radius: 8px; 
+	border-radius: 8px; 
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,.1);
+}
