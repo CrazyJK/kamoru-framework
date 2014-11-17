@@ -1,5 +1,9 @@
-kamoru-crazy
+kamoru-framework
 ================
-crazy web project
-  - stand-alone
-  - a set of core, storage and web by RMI
+  * kamoru-core
+  * kamoru-util
+  * kamoru-web
+  * kamoru-spring
+  * kamoru-tools
+
+
