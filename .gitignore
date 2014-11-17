@@ -16,7 +16,10 @@ hs_err_pid*
 .settings
 .classpath
 .springBeans
-target
+target/
 
 # mac
 .DS_Store
+
+# build folder
+bin/
