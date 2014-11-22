@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>jk.kamoru</groupId>
+		<artifactId>kamoru-parent</artifactId>
+		<version>1.1.0</version>
+		<relativePath>../kamoru-parent</relativePath>
+	</parent>
+	<artifactId>kamoru-web</artifactId>
+	<packaging>jar</packaging>
+	<name>kAmOrU Web</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>jk.kamoru</groupId>
+			<artifactId>kamoru-util</artifactId>
+		</dependency>
+		<!-- sitemesh -->
+		<dependency>
+			<groupId>org.sitemesh</groupId>
+			<artifactId>sitemesh</artifactId>
+		</dependency>
+		<!-- Servlet jstl-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<!-- servlet tagsupport -->
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+		</dependency>
+	</dependencies>
+</project>
