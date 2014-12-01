@@ -12,10 +12,10 @@
 
 	<modules>
 		<module>../kamoru-core</module>
-		<module>../kamoru-spring</module>
-		<module>../kamoru-tools</module>
 		<module>../kamoru-util</module>
+		<module>../kamoru-spring</module>
 		<module>../kamoru-web</module>
+		<module>../kamoru-tools</module>
 		<module>../kamoru-boot</module>
 	</modules>
 

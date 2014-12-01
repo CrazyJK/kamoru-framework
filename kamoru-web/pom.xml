@@ -14,22 +14,27 @@
 	<dependencies>
 		<dependency>
 			<groupId>jk.kamoru</groupId>
-			<artifactId>kamoru-util</artifactId>
+			<artifactId>kamoru-spring</artifactId>
 		</dependency>
-		<!-- sitemesh -->
+		<!-- Servlet -->
+		<!-- <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		sitemesh
 		<dependency>
 			<groupId>org.sitemesh</groupId>
 			<artifactId>sitemesh</artifactId>
 		</dependency>
-		<!-- Servlet jstl-->
+		Servlet jstl
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 		</dependency>
-		<!-- servlet tagsupport -->
+		servlet tagsupport
 		<dependency>
 			<groupId>javax.servlet.jsp</groupId>
 			<artifactId>jsp-api</artifactId>
-		</dependency>
+		</dependency> -->
 	</dependencies>
 </project>

@@ -48,11 +48,6 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-		<!-- Servlet -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-		</dependency>
 		<!-- image scalar -->
 		<dependency>
 			<groupId>org.imgscalr</groupId>
